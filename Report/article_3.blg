@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2021)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: article_3.aux
+The style file: unsrt.bst
+Database file #1: sample.bib
+Warning--entry type for "OECDmetro" isn't style-file defined
+--line 69 of file sample.bib
+You've used 4 entries,
+            1791 wiz_defined-function locations,
+            481 strings with 4339 characters,
+and the built_in function-call counts, 918 in all, are:
+= -- 81
+> -- 39
+< -- 0
++ -- 15
+- -- 11
+* -- 69
+:= -- 151
+add.period$ -- 11
+call.type$ -- 4
+change.case$ -- 4
+chr.to.int$ -- 0
+cite$ -- 4
+duplicate$ -- 32
+empty$ -- 92
+format.name$ -- 11
+if$ -- 194
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 3
+newline$ -- 22
+num.names$ -- 4
+pop$ -- 10
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 13
+stack$ -- 0
+substring$ -- 81
+swap$ -- 4
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 10
+width$ -- 5
+write$ -- 43
+(There was 1 warning)
