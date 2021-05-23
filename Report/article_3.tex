@@ -1,0 +1,144 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[fleqn,10pt]{SelfArx} % Document font size and equations flushed left
+
+\usepackage[english]{babel} % Specify a different language here - english by default
+
+\usepackage{lipsum} % Required to insert dummy text. To be removed otherwise
+
+%----------------------------------------------------------------------------------------
+%	COLUMNS
+%----------------------------------------------------------------------------------------
+
+\setlength{\columnsep}{0.55cm} % Distance between the two columns of text
+\setlength{\fboxrule}{0.75pt} % Width of the border around the abstract
+
+%----------------------------------------------------------------------------------------
+%	COLORS
+%----------------------------------------------------------------------------------------
+
+\definecolor{color1}{RGB}{0,0,90} % Color of the article title and sections
+\definecolor{color2}{RGB}{0,20,20} % Color of the boxes behind the abstract and headings
+
+%----------------------------------------------------------------------------------------
+%	HYPERLINKS
+%----------------------------------------------------------------------------------------
+
+\usepackage{hyperref} % Required for hyperlinks
+
+\hypersetup{
+	hidelinks,
+	colorlinks,
+	breaklinks=true,
+	urlcolor=color2,
+	citecolor=color1,
+	linkcolor=color1,
+	bookmarksopen=false,
+	pdftitle={Title},
+	pdfauthor={Author},
+}
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE INFORMATION
+%----------------------------------------------------------------------------------------
+
+\JournalInfo{Modern Data Analytics, project report, Cameroon} % Journal information
+\Archive{KU Leuven,  academic year 2020-2021} % Additional notes (e.g. copyright, DOI, review/research article)
+
+\PaperTitle{Prediction of cooling degree days for metropolitan areas: prioritising corrective measures to deal with heat waves.} % Article title
+
+\Authors{Tibor Barabás\textsuperscript{1}*,  Arabella D'Havé\textsuperscript{1}, Arailym Jussupova\textsuperscript{1}, Emmanuel Mainimo Geoffrey\textsuperscript{1},  Makondele Lumuenedio\textsuperscript{1}, Yueqi Zhang\textsuperscript{1}} % Authors
+\affiliation{\textsuperscript{1}\textit{Faculty of Science,  Master of Statistics and Data Science, KU Leuven, Leuven, Belgium}} % Author affiliation
+
+\affiliation{*\textit{Team coordinator}} % Corresponding author
+
+\Keywords{Heat waves --- Metropolitan areas --- Global warming --- Climate change} % Keywords - if you don't want any simply remove all the text between the curly brackets
+\newcommand{\keywordname}{Keywords} % Defines the keywords heading name
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+\Abstract{ }
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Output the title and abstract box
+
+% \tableofcontents % Output the contents section
+
+\thispagestyle{empty} % Removes page numbering from the first page
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+\section*{Introduction} % The \section*{} command stops section numbering
+
+\addcontentsline{toc}{section}{Introduction} % Adds this section to the table of contents
+
+Climate change and global warming are currently high on the agenda of many governments and politicians because of their potential threat to public health and environment.  Global warming has an impact on the more frequent occurrence of heat waves\cite{BaldwinJaneWilson2019TCHW}.
+As a logical result of that, energy consumption levels for cooling will rise.  The extent to which energy consumption increases varies according to location.  Metropolitan areas in developped countries are expected to have a higher energy consumption due to the use of cooling devices \cite{SivakMichael2009Pedf} because these areas absorb more solar energy and have less mechanisms to cool such as tree coverage\cite{SmidM2019REcb}.  
+
+The energy consumed by those cooling devices can be measured with cooling degree days (CDD). It is a measure for the energy demand needed to cool buildings. This measure is calculated by subtracting a threshold temperature from the average daily temperature, and summing only positive values over a fixed period such as an entire year.  This measure is available in the OECD (Organisation for economic co-operation and development) Metropolitan Dataset along with socio-economic and environmental indicators for 665 metropolitan areas\cite{OECDmetro}.
+
+The objective of this report is to use modern data analytics to correlate cooling degree days to metropolitan indicators in order to support decision makers in their choice of corrective measures.  Indicators showing a strong correlation with CDD should be given a high priority.  Relevant indicators from the OECD dataset to examine are: demographic indicators relating to demographic composition, area, and density; economic indicators relating to economic activity such as GDP, productivity, and employment; social indicators relating to the environment and income distribution; territory indicators relating to the territorial fragmentation and polycentricity of metropolitan areas.
+%------------------------------------------------
+
+\section{Methods}
+
+\subsection{Selection and preprocessing of the data}
+
+The  OECD, in cooperation with the EU, has developed a harmonised definition of metropolitan areas.  Being composed of a city and its commuting zone,  a metropolitan area encompasses the economic and functional extent of cities based on daily people’s movements. This definition aims at providing a functional/economic definition of cities and their area of influence, by maximising international comparability.
+
+\paragraph{Selection} The demographic indicators consist of two subsets on 'demographic composition and evolution' (22 indicators) and 'area and population density' (12 indicators).  There are 6 economic indicators (labour indicators were excluded due to irrelevance) , 23 socio-environmental indicators and 5 territory indicators. Indicators with regards to digitization were also excluded due to irrelevance.
+\paragraph{Preprocessing} 
+
+\subsection{Subsection}
+
+\lipsum[9] % Dummy text
+
+
+%------------------------------------------------
+
+\section{Results and Discussion}
+
+\lipsum[10] % Dummy text
+
+\subsection{Subsection}
+
+\lipsum[11] % Dummy text
+
+\subsubsection{Subsubsection}
+
+\lipsum[12] % Dummy text
+
+\subsubsection{Subsubsection}
+
+\lipsum[13] % Dummy text
+
+
+\subsubsection{Subsubsection}
+
+\lipsum[14] % Dummy text
+
+\subsection{Subsection}
+
+\lipsum[15] % Dummy text
+
+\newpage
+%----------------------------------------------------------------------------------------
+%	REFERENCE LIST
+%----------------------------------------------------------------------------------------
+
+\phantomsection
+\bibliographystyle{unsrt}
+\bibliography{sample.bib}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
