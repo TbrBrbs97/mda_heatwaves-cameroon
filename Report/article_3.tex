@@ -82,7 +82,7 @@
 \addcontentsline{toc}{section}{Introduction} % Adds this section to the table of contents
 
 Climate change and global warming are currently high on the agenda of many governments and politicians because of their potential threat to public health and environment.  Global warming has an impact on the more frequent occurrence of heat waves\cite{BaldwinJaneWilson2019TCHW}.
-As a logical result of that, energy consumption levels for cooling will rise.  The extent to which energy consumption increases varies according to location.  Metropolitan areas in developped countries are expected to have a higher energy consumption due to the use of cooling devices \cite{SivakMichael2009Pedf} because these areas absorb more solar energy and have less mechanisms to cool such as tree coverage\cite{SmidM2019REcb}.  
+As a logical result of that, energy consumption levels for cooling will rise.  The extent to which energy consumption increases varies according to location.  Metropolitan areas in developped countries are expected to have a higher energy consumption due to the use of cooling devices \cite{SivakMichael2009Pedf} because these areas absorb more solar energy due to the extensiveness of dark, ill-reflectant surfaces such as concrete and the lack of (natural) recourses to cool such as trees and water \cite{SmidM2019REcb,ROSSI2014621}.  
 
 The energy consumed by those cooling devices can be measured with cooling degree days (CDD). It is a measure for the energy demand needed to cool buildings. This measure is calculated by subtracting a threshold temperature from the average daily temperature, and summing only positive values over a fixed period such as an entire year.  This measure is available in the OECD (Organisation for economic co-operation and development) Metropolitan Dataset along with socio-economic and environmental indicators for 665 metropolitan areas\cite{OECDmetro}.
 
@@ -96,11 +96,19 @@ The objective of this report is to use modern data analytics to correlate coolin
 The  OECD, in cooperation with the EU, has developed a harmonised definition of metropolitan areas.  Being composed of a city and its commuting zone,  a metropolitan area encompasses the economic and functional extent of cities based on daily people’s movements. This definition aims at providing a functional/economic definition of cities and their area of influence, by maximising international comparability.
 
 \paragraph{Selection} The demographic indicators consist of two subsets on 'demographic composition and evolution' (22 indicators) and 'area and population density' (12 indicators).  There are 6 economic indicators (labour indicators were excluded due to irrelevance) , 23 socio-environmental indicators and 5 territory indicators. Indicators with regards to digitization were also excluded due to irrelevance.
-\paragraph{Preprocessing} 
+\paragraph{Preprocessing} In order to facilitate later interpretation, linear operations are applied on some variables. An example is the construction ratio, obtained by dividing the area of built-up by the total city area. As not all variables in the dataset have the resolution of a metropolitan area, a next approach is to disaggregate national statistics (such as inland water cover) to the city level, by weighing them with the relative extent of the metropolitan area. The latter method assumes homogeneous coverage of the variables over a country. The preprocessing is concluded with data cleaning, scaling and removing outliers. In that way, two scaled datasets containing 641 observations over 18 variables are obtained, a version with and without outliers. 
 
-\subsection{Subsection}
+\subsection{Data analysis}
 
-\lipsum[9] % Dummy text
+\paragraph{Time series analysis} \lipsum[4] % Dummy text
+
+\paragraph{Cluster analysis} \lipsum[4] % Dummy text
+
+\subsection{Model building}
+
+\paragraph{Calibration} \lipsum[4] % Dummy text
+
+\paragraph{Validation} \lipsum[4] % Dummy text
 
 
 %------------------------------------------------
@@ -109,24 +117,23 @@ The  OECD, in cooperation with the EU, has developed a harmonised definition of 
 
 \lipsum[10] % Dummy text
 
-\subsection{Subsection}
+\subsection{Results}
 
 \lipsum[11] % Dummy text
 
-\subsubsection{Subsubsection}
+\subsubsection{Data analysis}
 
 \lipsum[12] % Dummy text
 
-\subsubsection{Subsubsection}
+\subsubsection{Model calibration and validation}
 
 \lipsum[13] % Dummy text
 
+\subsection{Discussion}
 
-\subsubsection{Subsubsection}
+\lipsum[15] % Dummy text
 
-\lipsum[14] % Dummy text
-
-\subsection{Subsection}
+\section{Conclusion}
 
 \lipsum[15] % Dummy text
 
